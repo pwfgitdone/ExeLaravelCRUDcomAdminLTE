@@ -75,7 +75,10 @@ class ClienteController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        $cliente = Cliente::find($id);
+        $input = $request->all();
+        $cliente->update($input);
+        return redirect('cliente')->with('flash_message', 'Cliente Atualizado!');
     }
 
     /**
