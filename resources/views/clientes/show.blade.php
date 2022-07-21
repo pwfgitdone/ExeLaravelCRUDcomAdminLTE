@@ -1,4 +1,4 @@
-@extends('adminlte::page')
+@extends('clientes.layout')
 
 @section('content')
 

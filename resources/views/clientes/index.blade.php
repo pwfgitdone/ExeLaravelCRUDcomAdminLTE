@@ -1,4 +1,4 @@
-@extends('adminlte::page')
+@extends('clientes.layout')
 
 @section('content')
   <div class="container">
@@ -40,12 +40,17 @@
                         {{ method_field('DELETE') }}
                         {{ csrf_field() }}
                       <button type="submit" class="btn btn-danger btn-sm" title="Deletar Cliente" onclick="return confirm('Confirma deletar cliente?')" ><i class="fa fa-trash-o" aria-hidden="true"></i> Deletar</button></a>
+                      </form>
                     </td>
                   </tr>
                   @endforeach
                 </tbody>
               </table>
             </div>
+            <br>
+            <a href="{{ url('/home') }}" class="btn btn-primary btn-sm" title="Home">
+              Home
+            </a>
           </div>
         </div>
       </div>
