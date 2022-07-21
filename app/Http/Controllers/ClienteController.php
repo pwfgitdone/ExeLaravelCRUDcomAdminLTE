@@ -89,6 +89,7 @@ class ClienteController extends Controller
      */
     public function destroy($id)
     {
-        //
+        Cliente::destroy($id);
+        return redirect('cliente')->with('flash_message', 'Cliente deletado!');
     }
 }
