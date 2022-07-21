@@ -1,5 +1,7 @@
 @extends('clientes.layout')
 
+@section('title', 'Clientes')
+
 @section('content')
   <div class="container">
      <div class="row" style="margin: 20px;">
