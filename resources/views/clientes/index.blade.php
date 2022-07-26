@@ -11,6 +11,9 @@
             <h2>Clientes</h2>
           </div>
           <div class="card-body">
+            <a href="{{ url('/home') }}" class="btn btn-primary btn-sm" title="Home">
+              Home
+            </a>&nbsp;
             <a href="{{ url('/cliente/create') }}" class="btn btn-success btn-sm" title="Adicionar Novo Cliente">
               Novo Cliente
             </a>
@@ -37,7 +40,6 @@
                     <td>
                       <a href="{{ url('/cliente/' . $item->id) }}" title="Ver Cliente"><button class="btn btn-info btn-sm"><i class="fa fa-eye" aria-hidden="true"></i> Ver</button></a>
                       <a href="{{ url('/cliente/' . $item->id) . '/edit' }}" title="Editar Cliente"><button class="btn btn-primary btn-sm"><i class="fa fa-pencil-square-o" aria-hidden="true"></i> Editar</button></a>
-                      
                       <form method="POST" action="{{ url('/cliente' . '/' . $item->id) }}" accept-charset="UTF-8" style="display:inline">
                         {{ method_field('DELETE') }}
                         {{ csrf_field() }}
@@ -49,10 +51,6 @@
                 </tbody>
               </table>
             </div>
-            <br>
-            <a href="{{ url('/home') }}" class="btn btn-primary btn-sm" title="Home">
-              Home
-            </a>
           </div>
         </div>
       </div>

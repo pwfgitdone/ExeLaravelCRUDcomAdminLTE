@@ -18,6 +18,11 @@
       <label for="">Endereço</label>
       <input type="text" name="endereco" id="endereco" class="form-control"><br>
 
+      <!--
+      <a href="{{ url('/cliente') }}" class="btn btn-primary btn-sm" title="Voltar">
+        Voltar
+      </a>&nbsp;
+      -->
       <input type="submit" value="Salvar" class="btn btn-success"><br>
     </form>
   </div>
