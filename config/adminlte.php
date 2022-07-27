@@ -241,7 +241,7 @@ return [
             'text' => 'Clientes',
             'url'  => 'cliente',
         ],
-        /*
+        
         [
             'type' => 'sidebar-menu-search',
             'text' => 'search',
@@ -252,6 +252,7 @@ return [
             'can'  => 'manage-blog',
             'active' => false,
         ],
+        /*
         [
             'text'        => 'pages',
             'url'         => 'admin/pages',
@@ -259,7 +260,7 @@ return [
             'label'       => 4,
             'label_color' => 'success',
             'active' => false,
-        ],
+        ],*/
         ['header' => 'account_settings'],
         [
             'text' => 'profile',
@@ -271,6 +272,7 @@ return [
             'url'  => 'admin/settings',
             'icon' => 'fas fa-fw fa-lock',
         ],
+        /*
         [
             'text'    => 'multilevel',
             'icon'    => 'fas fa-fw fa-share',

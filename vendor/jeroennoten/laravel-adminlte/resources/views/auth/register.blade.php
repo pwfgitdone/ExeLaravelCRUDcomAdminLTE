@@ -53,6 +53,24 @@
             @enderror
         </div>
 
+        {{-- Mobile field --}}
+        <div class="input-group mb-3">
+            <input type="mobile" name="mobile" class="form-control @error('mobile') is-invalid @enderror"
+                   value="{{ old('mobile') }}" placeholder="Celular">
+
+            <div class="input-group-append">
+                <div class="input-group-text">
+                    <span class="fas fa-mobile {{ config('adminlte.classes_auth_icon', '') }}"></span>
+                </div>
+            </div>
+
+            @error('mobile')
+                <span class="invalid-feedback" role="alert">
+                    <strong>{{ $message }}</strong>
+                </span>
+            @enderror
+        </div>
+
         {{-- Password field --}}
         <div class="input-group mb-3">
             <input type="password" name="password" class="form-control @error('password') is-invalid @enderror"
